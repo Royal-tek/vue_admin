@@ -1,11 +1,42 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ManagePlayers from '../views/ManagePlayers.vue'
+import CreateTeam from '../views/CreateTeam.vue'
+import ManageCoaches from '../views/ManageCoaches.vue'
+import AssignPoints from '../views/AssignPoints.vue'
+import ManagePoints from '../views/ManagePoints.vue'
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/manage-players',
+    name: 'ManagePlayers',
+    component: ManagePlayers
+  },
+  {
+    path: '/create-team',
+    name: 'CreateTeam',
+    component: CreateTeam
+  },
+  {
+    path: '/manage-coaches',
+    name: 'ManageCoaches',
+    component: ManageCoaches
+  },
+  {
+    path: '/assign-points',
+    name: 'AssignPoints',
+    component: AssignPoints
+  },
+  {
+    path: '/manage-points',
+    name: 'ManagePoints',
+    component: ManagePoints
   },
   {
     path: '/about',
